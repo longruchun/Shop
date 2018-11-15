@@ -1,5 +1,7 @@
 package com.Petshop.dao;
 
+import java.util.List;
+
 import com.Petshop.model.Petowner;
 
 public interface PetownerMapper {
@@ -14,4 +16,6 @@ public interface PetownerMapper {
     int updateByPrimaryKeySelective(Petowner record);
 
     int updateByPrimaryKey(Petowner record);
+
+	List<Petowner> getAll();
 }

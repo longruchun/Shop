@@ -140,11 +140,11 @@
   </update>
   
     <select id="getAll"  resultMap="BaseResultMap">
-     select * from shop_menu
+     select * from petshop_menu
   </select>
   
   <select id="getModelsByPid"  resultMap="BaseResultMap">
-     select * from shop_menu where pid=#{pid}
+     select * from petshop_menu where pid=#{pid}
   </select>
   
   

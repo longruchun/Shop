@@ -1,5 +1,7 @@
 package com.Petshop.dao;
 
+import java.util.List;
+
 import com.Petshop.model.Pet;
 
 public interface PetMapper {
@@ -14,4 +16,6 @@ public interface PetMapper {
     int updateByPrimaryKeySelective(Pet record);
 
     int updateByPrimaryKey(Pet record);
+
+	List<Pet> getAll();
 }

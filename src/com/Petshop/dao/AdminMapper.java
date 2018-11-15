@@ -1,5 +1,7 @@
 package com.Petshop.dao;
 
+import java.util.List;
+
 import com.Petshop.model.Admin;
 
 public interface AdminMapper {
@@ -9,9 +11,13 @@ public interface AdminMapper {
 
     int insertSelective(Admin record);
 
-    Admin selectByPrimaryKey(Integer id);
+    int selectByPrimaryKey(Admin t);
 
     int updateByPrimaryKeySelective(Admin record);
 
     int updateByPrimaryKey(Admin record);
+
+	Admin selectByPrimaryKey(Integer id);
+
+	List<Admin> getAll();
 }
